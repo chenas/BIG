@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spin_ip_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText 
+            android:id="@+id/et_ip_ipaddr"
+            android:inputType="phone"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:hint="请输入ip地址或域名"
+            />
+        <LinearLayout 
+     		android:layout_width="2dp"
+     		android:layout_height="40dp"
+     		android:background="#CCCCCC"       
+            >
+        </LinearLayout>
+        <Button 
+            android:id="@+id/btn_ip_search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="查询"
+            />
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/tv_ip_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+</LinearLayout>

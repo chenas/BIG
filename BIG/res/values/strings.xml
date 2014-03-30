@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BIG</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">退出</string>
+    <string name="main_title">查吧查吧</string>
+    <!-- 基本Activity -->
+    <string name="base_back">返回</string>
+    <string name="base_title">总标题</string>
+
+</resources>

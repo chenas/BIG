@@ -1,0 +1,302 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+			
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:text="@string/main_title"
+            />
+        
+			<!-- 横线 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+        	</LinearLayout>
+        	
+            
+        <!-- 第一排 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_barcode_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/barcode" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_phone_area"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/phone" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_ip_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@drawable/barcode"
+                android:src="@drawable/ipaddr" />
+        </LinearLayout>
+            
+			<!-- 横线 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            
+            
+        <!-- 第一排 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/barcode" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/phone" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@drawable/barcode"
+                android:src="@drawable/barcode" />
+        </LinearLayout>
+        
+			<!-- 横线 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            
+        <!-- 第一排 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/barcode" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/phone" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@drawable/barcode"
+                android:src="@drawable/barcode" />
+        </LinearLayout>
+        
+			<!-- 横线 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            
+        <!-- 第一排 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/barcode" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/phone" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@drawable/barcode"
+                android:src="@drawable/barcode" />
+        </LinearLayout>
+        
+			<!-- 横线 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+            
+        <!-- 第一排 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/barcode" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/phone" />
+
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="100dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:contentDescription="@drawable/barcode"
+                android:src="@drawable/barcode" />
+        </LinearLayout>
+        
+			<!-- 横线 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="5dp"
+                android:background="#CCCCCC"
+                android:orientation="horizontal" >
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>
