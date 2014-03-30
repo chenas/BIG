@@ -1,7 +1,22 @@
 package net.as.big.ip;
 
-import net.as.big.base.BaseActivity;
+import java.io.IOException;
+
 import net.as.big.R;
+import net.as.big.base.BaseActivity;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.annotation.SuppressLint;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,6 +35,8 @@ public class IPActivity extends BaseActivity implements OnClickListener{
 	private EditText ipaddrEt = null;
 	private Button searchBtn = null;
 	private TextView ipTv = null;
+	
+	private JSONObject jsonObject = null;
 	
 	private ArrayAdapter<String> adapter = null;  
 	private static final String[] ip={"根据IP/域名查询地址","根据地址查询IP"};
@@ -56,11 +73,18 @@ public class IPActivity extends BaseActivity implements OnClickListener{
 		if(v == searchBtn){
 			switch (searchType) {
 			case IP2ADDR:
-				
+				String ipaddr = ipaddrEt.getText().toString().trim();
+				new ReadHttpGet().execute("http://apis.juhe.cn/ip/ip2addr?ip="+ipaddr+"&key=ea84726df1d952b8271e118eca51be34");
+				if(jsonObject != null){
+					
+				}
 				break;
 				
 			case ADDR2IP:
-				
+				String addr2ip = ipaddrEt.getText().toString().trim();
+				new ReadHttpGet().execute("http://apis.juhe.cn/ip/addr2ip?addr="+addr2ip+"&key=ea84726df1d952b8271e118eca51be34");
+				if(jsonObject != null){
+				}
 				break;
 
 			default:
@@ -85,5 +109,64 @@ public class IPActivity extends BaseActivity implements OnClickListener{
 		@Override
 		public void onNothingSelected(AdapterView<?> arg0) {}
 	}
+
+	 class ReadHttpGet extends AsyncTask<Object, Object, Object>
+	    {
+	      @Override
+	      protected Object doInBackground(Object... params) {
+	         HttpGet httpRequest = new HttpGet(params[0].toString());
+	         try
+	         {
+	            HttpClient httpClient = new DefaultHttpClient();
+	            HttpResponse httpResponse = httpClient.execute(httpRequest);
+	            if(httpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK)
+	            {
+	                String strResult = EntityUtils.toString(httpResponse.getEntity());
+	                return strResult;
+	            }
+	            else
+	            {
+	                return "请求出错";
+	            }
+	         }
+	         catch(ClientProtocolException e)
+	         {
+	         }catch (IOException e) {
+	            // TODO Auto-generated catch block
+	            e.printStackTrace();
+	         }
+	         closeDialog();
+	         return null;
+	      }
+
+	      @SuppressLint("NewApi")
+	      @Override
+	      protected void onCancelled(Object result) {
+	         super.onCancelled(result);
+	      }
+
+	      @Override
+	      protected void onPostExecute(Object result) {
+	         super.onPostExecute(result);
+	         String jsonResult = result.toString();
+	         try {
+				jsonObject = new JSONObject(jsonResult);
+				ipTv.setText(jsonObject.toString());
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+	         closeDialog();
+	      }
+
+	      @Override
+	      protected void onPreExecute() {
+	         showDialog("正在查询，请稍后。。。");;
+
+	      }
+	      @Override
+	      protected void onProgressUpdate(Object... values) {
+	         super.onProgressUpdate(values);
+	      }
+	    }
 	
 }
