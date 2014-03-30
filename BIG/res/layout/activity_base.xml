@@ -47,12 +47,19 @@
         </LinearLayout>
     </RelativeLayout>
     
-    <LinearLayout 
-        android:id="@+id/layout_sub_activity"
+   <!--  <LinearLayout 
+        
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:orientation="vertical"
         >
-    </LinearLayout>
+    </LinearLayout> -->
+    
+    <ScrollView 
+        android:id="@+id/layout_sub_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    </ScrollView>
 
 </LinearLayout>

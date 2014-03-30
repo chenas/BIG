@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +17,7 @@ public class BaseActivity extends Activity{
 	protected Button backBtn = null;
 	protected TextView titleTv = null;
 	
-	private LinearLayout subView = null;
+	private ScrollView subView = null;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +36,7 @@ public class BaseActivity extends Activity{
 	}
 
 	protected void addView(View v){
-		subView = (LinearLayout) findViewById(R.id.layout_sub_activity);
+		subView = (ScrollView) findViewById(R.id.layout_sub_activity);
 		subView.addView(v);
 	}
 	

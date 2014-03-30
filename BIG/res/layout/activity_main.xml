@@ -39,7 +39,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/barcode" />
+                android:src="@drawable/idno" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -83,7 +83,7 @@
             </LinearLayout>
             
             
-        <!-- 第一排 -->
+        <!-- 第二排 -->
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -96,7 +96,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/barcode" />
+                android:src="@drawable/delivery" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -111,7 +111,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/phone" />
+                android:src="@drawable/weather" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -126,7 +126,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@drawable/barcode"
-                android:src="@drawable/barcode" />
+                android:src="@drawable/appleid" />
         </LinearLayout>
         
 			<!-- 横线 -->
@@ -137,7 +137,7 @@
                 android:orientation="horizontal" >
             </LinearLayout>
             
-        <!-- 第一排 -->
+        <!-- 第三排 -->
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -150,7 +150,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/barcode" />
+                android:src="@drawable/subway" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -165,7 +165,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/phone" />
+                android:src="@drawable/wifi" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -180,7 +180,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@drawable/barcode"
-                android:src="@drawable/barcode" />
+                android:src="@drawable/library" />
         </LinearLayout>
         
 			<!-- 横线 -->
@@ -191,7 +191,7 @@
                 android:orientation="horizontal" >
             </LinearLayout>
             
-        <!-- 第一排 -->
+        <!-- 第四排 -->
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -204,7 +204,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/barcode" />
+                android:src="@drawable/cookbook" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -219,7 +219,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/phone" />
+                android:src="@drawable/restaurant" />
 
             <LinearLayout
                 android:layout_width="5dp"
@@ -234,7 +234,7 @@
                 android:layout_weight="1"
                 android:background="#ffffff"
                 android:contentDescription="@drawable/barcode"
-                android:src="@drawable/barcode" />
+                android:src="@drawable/kaoshi" />
         </LinearLayout>
         
 			<!-- 横线 -->
@@ -245,7 +245,7 @@
                 android:orientation="horizontal" >
             </LinearLayout>
             
-        <!-- 第一排 -->
+        <!-- 第五排 -->
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
